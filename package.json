@@ -1,0 +1,22 @@
+{
+  "name": "petshop",
+  "version": "1.0.0",
+  "description": "La temática del sitio sera un sitio web dedicado a la venta de productos para mascotas como alimentos, juguetes, snacks, cepillos, y accesorios para mascotas.\r La web esta dedicada a todas aquellas personas que tienen mascotas.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliantfernandez/grupo_8_petShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliantfernandez/grupo_8_petShop/issues"
+  },
+  "homepage": "https://github.com/juliantfernandez/grupo_8_petShop#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
