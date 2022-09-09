@@ -24,7 +24,7 @@ Guido Pigliapoco: Tengo 33 años, estoy enfocado en aprender desarrollo web con 
 
 Jennifer Andrea Trujillo: Colombiana de 31 años, docente en un colegio público en la ciudad de Medellín, uno de sus mayores hobbies es viajar y le gusta patinar. Aprendiendo a programar y con las mejores intenciones de aportar todo su conocimiento al equipo.
 
-Manuel Giovinazzo: Tengo 27 años, me dedico al ecommerce, me interesa la programacion desde siempre, y con muchas ganas de aprender desarrollo web.
+Manuel Giovinazzo: Tengo 27 años, soy de Buenos Aires y me dedico al e-commerce. Me interesa la computacion desde muy chico y hace anos tengo ganas de meterme en el mundo de la programacion. Con muchas ganas de aprender desarrollo web.
 
 Mateo Zuluaga: Soy Colombiano, tengo 29 años me dedico al analisis financiero y me apasiona la programación.
 
