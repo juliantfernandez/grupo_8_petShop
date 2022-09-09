@@ -1,6 +1,5 @@
-const express = require('express')
+let express = require('express')
 const path = require('path')
-
 
 let app = express()
 
@@ -15,3 +14,13 @@ app.get('/', (req, res) => {
     let htmlPath = path.join(__dirname, './views/index.html')
     res.sendFile(htmlPath)
 })
+// app.get('/', (req, res) => {
+//     res.send('Hola Mundo!')
+// })
+
+// app.METHOD(PATH, HANDLER);
+//  app.htpp('nombre de la ruta', funcion que se ejecuta )
+
+// app.get('/productos', (req, res) => {
+//     res.send('Productos!')
+// })
