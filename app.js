@@ -11,7 +11,7 @@ app.listen(3000, () => {
 })
 
 app.get('/', (req, res) => {
-    let htmlPath = path.join(__dirname, './views/cart.html')
+    let htmlPath = path.join(__dirname, './views/index.html')
     res.sendFile(htmlPath)
 })
 // app.get('/', (req, res) => {
