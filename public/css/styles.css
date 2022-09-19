@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.header div img{
+.header div img, .logo{
     padding-right: 15px;
     height: 80px;
 }
@@ -160,7 +160,102 @@
     border-radius: 20px;
 }
 
+.contact-index{
 
+background-image: url('../img/main-dog.jpg');
+height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.contact-index a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+    padding: 10px 35px 10px 35px;
+}
+
+.contact-index a:hover{
+    background-color: #F2F2F2;
+    color: black;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav li{
+    list-style: none;
+}
+
+.footer-nav li a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #000;
+    font-size: 17px;
+}
+
+.footer-nav li a:hover{
+    color: #6C6EA0;
+    border-bottom: 1px solid #6C6EA0;
+}
+
+.footer-promo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-promo p{
+    padding-top: 15px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: #6C6EA0;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-promo input{
+    border-radius: 100px;
+    padding-left: 10px;
+    border: none;
+}
+
+.footer-promo input:focus{
+    outline: none;
+    border: 2px solid #6C6EA0!important;
+}
+
+.footer-promo button{
+    font-size: 14px; 
+    border: 1px solid #6C6EA0;
+    background-color: #6C6EA0;
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 16px;
+    transition: .3s ;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.footer-promo button:hover{
+background-color: #464766;
+    transition: .3s ;
+}
+
+footer{
+    background-color: #BEE5BF;
+}
 
 /*CART - Manuel Giovinazzo*/
 
