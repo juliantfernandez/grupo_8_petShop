@@ -260,12 +260,14 @@ footer{
 /*CART - Manuel Giovinazzo*/
 
 
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
+.containerCarrito{
+	max-width: 50vw;
+	position:relative;
+    left: 34vw;
+    
 }
 
-.container > h1{
+.containerCarrito > h1{
 	padding: 20px 0;
     font-size: x-large;
 }
@@ -315,7 +317,7 @@ footer{
     margin-bottom: 5px;
     font-size: 15px;
     font-weight: bold;
-    color: gold;
+    color: #6C6EA0;
 }
 
 .eliminarProd{
@@ -323,19 +325,18 @@ footer{
 	bottom: 20px;
 	right: 20px;
 	padding: 10px 25px;
-	background-color: salmon;
+	background-color: #F87060;
 	color: white;
 	cursor: pointer;
 	border-radius: 5px;
-
 }
 
 
 .cantidadProd > input{
-	width: 40px;
+	width: 60px;
 	padding: 5px;
 	text-align: center;
-
+    border-radius: 5px;
 }
 
 .cantidadProd {
@@ -365,24 +366,25 @@ footer{
 
 }
 
-.totalCart a{
+#botonCompra {
     display: block;
     text-align: center;
 	height: 40px;
     line-height: 40px;
-    background-color: forestgreen;
+    background-color: #297045;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
 
 }
 
 #precioTotal{
-    color: red;
+    color: #F87060;
     font-weight: bold;
 }
 
 #ahorro{
-    color: gold;
+    color: #6C6EA0;
     font-weight: bold;
 }
 

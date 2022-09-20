@@ -35,11 +35,32 @@
                     <li>
                         <a href="#">Contacto</a>
                     </li>
+                    <a class="icon-cart" href="../views/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
                 </ul>
             </nav>
         </header>
+    
         <main>
-            <div class="container">
+    
+    
+             <section class="pets container pt-5 pb-5 ">
+                <div>
+                    <img class="pet-dog" src="../public/img/pet-dog2.jpg" alt=""><br/>
+                    <h3 class="text-center">Perro</h3>
+                </div>
+    
+                <div>
+                    <img class="pet-cat" src="../public/img/pet-cat.jpg" alt=""><br/>
+                    <h3 class="text-center">Gato</h3>
+                </div>
+    
+                <div>
+                    <img class="pet-other" src="../public/img/pet-dog.jpg" alt=""><br/>
+                    <h3 class="text-center">Otros</h3>
+                </div>
+             </section>
+            
+            <div class="containerCarrito">
                 <h1>Carrito De Compras</h1>
                 <div class="cart">
                     <div class="productos">
@@ -57,7 +78,7 @@
                             </div>
                         </div>
                         <div class="producto">
-                            <img src="../public/img/bulldog-frances.png">
+                            <img src="../publicimg/bulldog-frances.png">
                             <div class="infoProducto">
                                 <h3 class="nombreProd">Alimento Royal Canin Bulldog Frances</h3>
                                 <h4 class="precioProd">$5,000</h4>
@@ -83,48 +104,67 @@
                             <span>Ahorras</span>
                             <span id='ahorro'>$3,000</span>
                         </p>
-                        <a href="#">Comprar</a>
+                        <a href="#" id="botonCompra">Comprar</a>
                     </div>
                 </div>
             </div>
 
+            <section class="container-fluid mt-5 pt-5 pb-5 services-section">
+                <h2 class="text-center">Servicios</h2>
+                
+                <div class="services">
+                    <img src="../public/img/PeluqueriaCanina.jpg" alt="">
+                    <img src="../public/img/VETERINARIA.jpg" alt="">
+                </div>
+        
+            </section>
+        
+            <section class="contact-index d-flex align-items-center justify-content-center">
+                    <a href="#">CONTACTANOS</a>
+                
+            </section>
+
              </main>
 
-        <footer>
-            <div>
-                <img src="..." alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Productos</a>
-                    </li>
-                    <li>
-                        <a href="#">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#">Sobre Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <div>
-                <p>Get our newsletter</p>
-                <input type="email">
-                <button>Suscribirse</button>
-            </div>
-            <div>
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
-        </footer>
+             <footer class="container-fluid pt-5 d-flex justify-content-around align-items-center">
+                <div>
+                    <img class="logo" src="../public/img/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="footer-promo">
+                    <p>Get our newsletter</p>
+                    <input placeholder="E-mail" type="email">
+                    <button>Suscribirse</button>
+                </div>
+                <div>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+        
+               
+        
+                
+            </footer>
         
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
