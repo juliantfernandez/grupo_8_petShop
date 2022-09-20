@@ -400,8 +400,142 @@ footer{
     font-size: 20px;
     color: #6C6EA0 ;
     letter-spacing: 1.2px;
-    font-weight: 600;
-
-   
+    font-weight: 600;   
 }
 
+.bannerPromo{
+    position: relative;
+    background-color: #6C6EA0;
+    min-height: 41px;
+    font-size: 12px;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.textoBanner{
+    color:#ffffff;
+    text-align: center;
+}
+
+#contenedorPromo{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ 
+/*.prueba3{
+    width: calc(100% - 0.75rem);
+    height: 100%;
+    margin: 0 0.375rem;
+    object-fit: contain;
+}*/
+
+.proveedor{
+    margin-bottom: 20px;
+    font-family: Playfair Display;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.productId{
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    color: #707070;
+}
+
+#precio{
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+    color: #081f2d;
+    font-family: 'lato';
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+
+.input-qty{
+    font-size: 12px;
+    color: #081f2d;
+    height: 28px;
+    width: 35px;
+    border: 0;
+    background: 0 0;
+    padding: 0;
+    font-weight: 600;
+    outline: 0;    border-radius: 0;
+    max-width: 100%;
+    line-height: 18px;
+    transition: border-color .5s;
+    box-shadow: none;
+    appearance: none;
+    text-align: center;
+    touch-action: manipulation;
+}
+
+.prueba4{
+    border-radius: 0!important;
+    min-width: 100px!important;
+    width: 100px!important;
+    height: 30px;
+    border-color: #999;
+    border: 1px solid #222;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    order: 1;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .boton-mas{
+        width: 30px;
+        line-height: 30px;
+        top: 0;
+        border: 0;
+        background: 0 0;
+        right: 0;
+        position: absolute;
+        padding-right: 15px;
+        touch-action: manipulation;
+        cursor: pointer;
+}
+
+.signo-mas{
+    content: "\f067";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+.boton-menos{
+    width: 30px;
+    line-height: 30px;
+    top: 0;
+    border: 0;
+    background: 0 0;
+    left: 0;
+    position: absolute;
+    padding-left: 15px;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.signo-mas{
+    content: "\f068";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
