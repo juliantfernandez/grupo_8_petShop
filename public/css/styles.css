@@ -473,7 +473,8 @@ footer{
     background: 0 0;
     padding: 0;
     font-weight: 600;
-    outline: 0;    border-radius: 0;
+    outline: 0;  
+    border-radius: 0;
     max-width: 100%;
     line-height: 18px;
     transition: border-color .5s;
@@ -483,23 +484,23 @@ footer{
     touch-action: manipulation;
 }
 
-.prueba4{
-    border-radius: 0!important;
-    min-width: 100px!important;
-    width: 100px!important;
+.cantidades{
+    border-radius: 0;
+    min-width: 100px;
+    width: 100px;
     height: 30px;
     border-color: #999;
     border: 1px solid #222;
     text-align: center;
-    display: inline-block;
     position: relative;
     margin-right: 10px;
     order: 1;
-    font: inherit;
     vertical-align: baseline;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 20px;
+    
 }
 
     .boton-mas{
@@ -538,4 +539,19 @@ footer{
     content: "\f068";
     font-family: 'Line Awesome Free';
     font-weight: 900;
+}
+
+.agregar-carrito{
+    background: #F87060;
+    border-color: #F87060;
+    color: #fff;
+    border-radius: 0;   
+}
+
+.descripcion-producto{
+    margin-top: 20px;
+    color: #6C6EA0;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: playfair display;
 }
