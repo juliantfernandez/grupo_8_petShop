@@ -579,7 +579,7 @@ footer{
 .container-register-button {
     display: flex;
     flex-flow: row;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 .container-register-redes {
@@ -588,8 +588,7 @@ footer{
 
 .item {
     flex: 1 1 auto;
-    text-align: left;
-    margin-left: 300px;
+    text-align: center;
 }
 
 .item-button {
@@ -612,4 +611,13 @@ footer{
     width: 200px;
     border-radius: 2px;
     background-color: white;
+}
+
+.input {
+    border-radius: 5px;
+}
+
+.icono {
+    width: 15px;
+    margin-top: 3%;
 }
