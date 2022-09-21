@@ -22,6 +22,14 @@ app.get('/product', (req, res) => {
 app.get('/cart', (req, res) => {
     res.sendFile(path.join(__dirname, './views/cart.html'))
 })
+
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/register.html'))
+})
+
+
+
+
 // app.get('/', (req, res) => {
 //     res.send('Hola Mundo!')
 // })
