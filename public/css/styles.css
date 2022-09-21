@@ -555,3 +555,61 @@ footer{
     font-size: 16px;
     font-family: playfair display;
 }
+
+.titulo-register{
+    text-align: center;
+}
+
+.fondo-register{
+    background-color: #BEE5BF;
+}
+
+.container-register {
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+}
+
+.container-register-inputs {
+    display: flex;
+    flex-flow: row;
+    margin-top: 5px;
+}
+
+.container-register-button {
+    display: flex;
+    flex-flow: row;
+    margin-top: 5px;
+}
+
+.container-register-redes {
+    margin-top: 20px;
+}
+
+.item {
+    flex: 1 1 auto;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.item-button {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.item-apellido {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.button {
+    width: 100px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.button-redes {
+    width: 200px;
+    border-radius: 2px;
+    background-color: white;
+}
