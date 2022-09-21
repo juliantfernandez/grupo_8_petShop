@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de producto</title>
+    <title>Detalle de Producto</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <script type="text/javascript" src="https://livejs.com/live.js%22%3E"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -18,7 +21,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="../views/index.html">Inicio</a>
+                    <a href="/">Inicio</a>
                 </li>
                 <li>
                     <a href="#">Productos</a>
@@ -32,6 +35,12 @@
                 <li>
                     <a href="#">Contacto</a>
                 </li>
+                <li>
+                    <a href="/myAccount"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </li>
+                <li> 
+                <a class="icon-cart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
+            </li>
             </ul>
         </nav>
     </header>
@@ -59,12 +68,6 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div><img src="/img/bulldog-frances.png" class="img-thumbnail" alt="bulldog-frances"></div>
-                    <!--<ol class="navbar bg-light prueba3" style="list-style-type: none">
-                        <li><img src="/img/p1.jpg" alt=""></li>
-                        <li><img src="/img/p1.jpg" alt=""></li>
-                        <li><img src="/img/p1.jpg" alt=""></li>
-                        <li><img src="/img/p1.jpg" alt=""></li>
-                    </ol> -->
                 </div>
                 <div class="col-md-6 mt">
                     <div >
@@ -102,8 +105,7 @@
 
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis atque ipsam ex dolores quo ducimus incidunt pariatur blanditiis earum amet? Earum autem omnis beatae deserunt optio dolorem repellat nam quam.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab doloremque aut aliquam rerum esse veniam perferendis libero, repudiandae quod facere nam magnam dolores maxime itaque iusto atque odio quam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem consequatur qui quasi dolorum odio saepe nisi. Quae, dolor perspiciatis repellendus autem unde eaque enim ipsa molestias, doloribus, error molestiae!</p>
+                        
 
                     </div>
 
@@ -113,51 +115,50 @@
         </div>
         <h2 class="text-center mt-5 mb-5 products-title">Productos Relacionados</h2>
     <section class="container-fluid d-flex justify-content-around" style=" margin-bottom: 40px">
-           <article class="product1">
-            <img src="/img/bulldog-frances.png" alt=""> 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="product1-title--description"> 
-                    <h3 class="pt-3">Titulo del Producto</h3><br>
-                    <p>Descripcion del producto</p>
-                    <button href="#"><a href="../views/productDetail.html">Ver Producto</a></button>
-                </div>
-            </div>
-           </article>
-
-           <article class="product1">
-            <img src="/img/bulldog-frances.png" alt=""> 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="product1-title--description"> 
-                    <h3 class="pt-3">Titulo del Producto</h3><br>
-                    <p>Descripcion del producto</p>
-                    <button href="#"><a href="../views/productDetail.html">Ver Producto</a></button>
-                </div>
-            </div>
-           </article>
-
-           <article class="product1">   
-            <img src="/img/bulldog-frances.png" alt=""> 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="product1-title--description"> 
-                    <h3 class="pt-3">Titulo del Producto</h3><br>
-                    <p>Descripcion del producto</p>
-                    <button href="#"><a href="../views/productDetail.html">Ver Producto</a></button>
-                </div>
-            </div>
-           </article>
-
-           <article class="product1">
-            <img src="/img/bulldog-frances.png" alt=""> 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="product1-title--description"> 
-                    <h3 class="pt-3">Titulo del Producto</h3><br>
-                    <p>Descripcion del producto</p>
-                    <button href="#"><a href="../views/productDetail.html">Ver Producto</a></button>
-                </div>
-            </div>
-           </article>
-
-          
+        <section class="container-fluid d-flex justify-content-around flex-wrap productos-destacados">
+            <article class="product1">
+             <img src="/img/bulldog-frances.png" alt=""> 
+             <div class="d-flex justify-content-between align-items-center">
+                 <div class="product1-title--description"> 
+                     <h3 class="pt-3">Titulo del Producto</h3><br>
+                     <p>Descripcion del producto</p>
+                     <button href="#"><a href="/product">Ver Producto</a></button>
+                 </div>
+             </div>
+            </article>
+ 
+            <article class="product1">
+             <img src="/img/bulldog-frances.png" alt=""> 
+             <div class="d-flex justify-content-between align-items-center">
+                 <div class="product1-title--description"> 
+                     <h3 class="pt-3">Titulo del Producto</h3><br>
+                     <p>Descripcion del producto</p>
+                     <button href="#"><a href="/product">Ver Producto</a></button>
+                 </div>
+             </div>
+            </article>
+ 
+            <article class="product1">
+             <img src="/img/bulldog-frances.png" alt=""> 
+             <div class="d-flex justify-content-between align-items-center">
+                 <div class="product1-title--description"> 
+                     <h3 class="pt-3">Titulo del Producto</h3><br>
+                     <p>Descripcion del producto</p>
+                     <button href="#"><a href="/product">Ver Producto</a></button>
+                 </div>
+             </div>
+            </article>
+ 
+            <article class="product1">
+             <img src="/img/bulldog-frances.png" alt=""> 
+             <div class="d-flex justify-content-between align-items-center">
+                 <div class="product1-title--description"> 
+                     <h3 class="pt-3">Titulo del Producto</h3><br>
+                     <p>Descripcion del producto</p>
+                     <button href="#"><a href="/product">Ver Producto</a></button>
+                 </div>
+             </div>
+            </article>
             
         
     </section>

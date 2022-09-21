@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="views/index.html">Inicio</a>
+                    <a href="/">Inicio</a>
                 </li>
                 <li>
                     <a href="#">Productos</a>
@@ -37,9 +37,11 @@
                     <a href="#">Contacto</a>
                 </li>
                 <li>
-                    <a href="register.html">Registro</a>
+                    <a href="/myAccount"><i class="fa fa-user" aria-hidden="true"></i></a>
                 </li>
-                <a class="icon-cart" href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
+                <li> 
+                <a class="icon-cart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
+            </li>
             </ul>
         </nav>
     </header>
@@ -89,14 +91,14 @@
     </main>
         
     <h2 class="text-center mt-5 mb-5 products-title">Productos destacados</h2>
-    <section class="container-fluid d-flex justify-content-around">
+    <section class="container-fluid d-flex justify-content-around flex-wrap productos-destacados">
            <article class="product1">
-            <img src="../public/img/bulldog-frances.png" alt=""> 
+            <img src="/img/bulldog-frances.png" alt=""> 
             <div class="d-flex justify-content-between align-items-center">
                 <div class="product1-title--description"> 
                     <h3 class="pt-3">Titulo del Producto</h3><br>
                     <p>Descripcion del producto</p>
-                    <button href="#"><a href="/views/productDetail.html">Ver Producto</a></button>
+                    <button href="#"><a href="/product">Ver Producto</a></button>
                 </div>
             </div>
            </article>
@@ -107,7 +109,7 @@
                 <div class="product1-title--description"> 
                     <h3 class="pt-3">Titulo del Producto</h3><br>
                     <p>Descripcion del producto</p>
-                    <button href="#"><a href="/views/productDetail.html">Ver Producto</a></button>
+                    <button href="#"><a href="/product">Ver Producto</a></button>
                 </div>
             </div>
            </article>
@@ -118,7 +120,7 @@
                 <div class="product1-title--description"> 
                     <h3 class="pt-3">Titulo del Producto</h3><br>
                     <p>Descripcion del producto</p>
-                    <button href="#"><a href="/views/productDetail.html">Ver Producto</a></button>
+                    <button href="#"><a href="/product">Ver Producto</a></button>
                 </div>
             </div>
            </article>
@@ -129,7 +131,7 @@
                 <div class="product1-title--description"> 
                     <h3 class="pt-3">Titulo del Producto</h3><br>
                     <p>Descripcion del producto</p>
-                    <button href="#"><a href="/views/productDetail.html">Ver Producto</a></button>
+                    <button href="#"><a href="/product">Ver Producto</a></button>
                 </div>
             </div>
            </article>
@@ -144,8 +146,8 @@
         <h2 class="text-center">Servicios</h2>
         
         <div class="services">
-            <img src="../public/img/PeluqueriaCanina.jpg" alt="">
-            <img src="../public/img/VETERINARIA.jpg" alt="">
+            <img src="/img/PeluqueriaCanina.jpg" alt="">
+            <img src="/img/VETERINARIA.jpg" alt="">
         </div>
 
     </section>
@@ -154,9 +156,9 @@
             <a href="#">CONTACTANOS</a>
         
     </section>
-    <footer class="container-fluid pt-5 d-flex justify-content-around align-items-center">
+    <footer class="container-fluid pt-5 d-flex justify-content-around align-items-center flex-wrap">
         <div>
-            <img class="logo" src="../public/img/logo.png" alt="logo">
+            <img class="logo" src="./img/logo.png" alt="logo">
         </div>
         <nav>
             <ul class="footer-nav">
@@ -182,11 +184,6 @@
             <p>Get our newsletter</p>
             <input placeholder="E-mail" type="email">
             <button>Suscribirse</button>
-        </div>
-        <div>
-            <i></i>
-            <i></i>
-            <i></i>
         </div>
 
        
