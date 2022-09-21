@@ -1,0 +1,12 @@
+Sirvio mucho juntarnos en zoom y compartir pantalla al momento del desarollo inicial del home para concordar un estilo de estructura de la pagina y ver como trabaja el resto comparado a mis experciencias. Tambien fue muy bueno poder despejar dudas con companeros que tengan algunas cosas mas claras que otros y vice-versa.
+
+Estamos contentos de poder haber cumplido a tiempo mayormente con los requisitos.
+Pudimos dividir bien el trabajo en una vista por cada integrante(html y css) y mayormente llegamos a cumplir con lo de cada uno.
+
+Podriamos haber hecho mas reuniones fuera del horario de cursada para ir viendo mas de cerca como iba a cada uno y si necesitaba ayuda en algun tema en particular con el que estaba trabado/a. Tambien seguir mas de cerca el progreso en vez de esperar hasta el ultimo para de dias para ver si todos habian podido llegar bien con su parte.
+
+A futuro estaria bueno estar mas activos en nuestro grupo de discord y quizas incorporar un grupo de whatsapp para estar mas al tanto entre todos mientras llevamos el dia a dia. Tambien podriamos dividir el trabajo por partes y en grupos mas chicos para ir trabajando juntos en vez de cada uno por su cuenta, aunque el tiempo libre limita esta idea bastante.
+Estaria bueno ponernos fechas aproximadas internas a cumplir para no llegar los ultimos momentos teniendo cosas que le hayan quedado por hacer a algunos y el resto no sepa.
+
+En conclusion deberiamos comenzar a comunicarnos y organizarnos mejor, darle mas uso al tablero de Trello y posiblemente dividirnos el trabajo mejor para fomentar el trabajo en equipo.
+
