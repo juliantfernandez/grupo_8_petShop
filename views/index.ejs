@@ -13,38 +13,7 @@
     
 </head>
 <body>
-    <header class="header">
-        <div>
-            <img src="/img/logo.png" alt="logo">
-            <h5>Petshop</h5>
-        </div>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Inicio</a>
-                </li>
-                <li>
-                    <a href="/product">Productos</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <a href="/myAccount"><i class="fa fa-user" aria-hidden="true"></i></a>
-                </li>
-                <li> 
-                <a class="icon-cart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
-            </li>
-            </ul>
-        </nav>
-    </header>
+    <%-include('header')%>
 
     <main>
 
@@ -91,8 +60,29 @@
     </main>
         
     <h2 class="text-center mt-5 mb-5 products-title">Productos destacados</h2>
+
+
+     
     <section class="container-fluid d-flex justify-content-around flex-wrap productos-destacados">
+        <% for(i = 0; i<p.length; i++) { %>   
            <article class="product1">
+            <img src="/img/bulldog-frances.png" alt=""> 
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="product1-title--description"> 
+                    
+                    <h3 class="pt-3"><%= p[i].nombre %></h3><br>
+                    <h5>id: <%= p[i].id %></h5>
+                    <h6>precio: $<%= p[i].precio %></h6>
+                    <p> descripcion:<%= p[i].descripcion %></p>
+                    <button href="#"><a href="/product">Ver Producto</a></button>
+                </div>
+            </div>
+           </article>
+           
+           
+           <%} %>
+
+           <!-- <article class="product1">
             <img src="/img/bulldog-frances.png" alt=""> 
             <div class="d-flex justify-content-between align-items-center">
                 <div class="product1-title--description"> 
@@ -123,21 +113,7 @@
                     <button href="#"><a href="/product">Ver Producto</a></button>
                 </div>
             </div>
-           </article>
-
-           <article class="product1">
-            <img src="/img/bulldog-frances.png" alt=""> 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="product1-title--description"> 
-                    <h3 class="pt-3">Titulo del Producto</h3><br>
-                    <p>Descripcion del producto</p>
-                    <button href="#"><a href="/product">Ver Producto</a></button>
-                </div>
-            </div>
-           </article>
-
-          
-            
+           </article> -->
         
     </section>
 
@@ -156,40 +132,7 @@
             <a href="#">CONTACTANOS</a>
         
     </section>
-    <footer class="container-fluid pt-5 d-flex justify-content-around align-items-center flex-wrap">
-        <div>
-            <img class="logo" src="./img/logo.png" alt="logo">
-        </div>
-        <nav>
-            <ul class="footer-nav">
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Productos</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="footer-promo">
-            <p>Get our newsletter</p>
-            <input placeholder="E-mail" type="email">
-            <button>Suscribirse</button>
-        </div>
-
-       
-
-        
-    </footer>
+   <%-include('footer')%>
     
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
