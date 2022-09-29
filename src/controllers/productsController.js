@@ -7,13 +7,13 @@ let productsController = {
             {
                 id: 1,
                 nombre: 'Puppy Cachorros',
-                price: 2500,
+                precio: 2500,
                 descripcion:'Comida para perros pequeños',
             },
             {
                 id: 2,
                 nombre: 'Grandes',
-                price: 3500,
+                precio: 3500,
                 descripcion:'Comida para perros grandes',
         }
         ]
