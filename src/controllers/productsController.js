@@ -3,7 +3,7 @@ let path = require('path');
 let productsController = {
     index: (req, res) => {
 
-        let products = [
+        let productsList = [
             {
                 id: 1,
                 nombre: 'Puppy Cachorros',
@@ -31,7 +31,7 @@ let productsController = {
             }
         ]
 
-        res.render('index', {p: products})
+        res.render('index', {p: productsList})
     }
 }
 

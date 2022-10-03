@@ -10,3 +10,6 @@ Estaria bueno ponernos fechas aproximadas internas a cumplir para no llegar los 
 
 En conclusion deberiamos comenzar a comunicarnos y organizarnos mejor, darle mas uso al tablero de Trello y posiblemente dividirnos el trabajo mejor para fomentar el trabajo en equipo.
 
+10/3
+
+Teniendo en cuenta que perdimos a una integrante del grupo y otro integrante nunca se presento o aporto nada hasta el dia de hoy, vamos a tener que empezar a dividirnos mucho mejor todo el trabajo. Tambien ayudarnos entre los 3 con temas que a cada uno nos cuesta mas que al otro o no entendemos bien en general. Definir un plan para llevar a cabo las tareas dadas, si va a ser hacer reuniones y trabajar en las mismas o trabajar por nuestra cuenta para maximizar el enfoque y despues hacer reuniones para ponernos al dia con como vienen los otros.
