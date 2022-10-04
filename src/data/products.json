@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+       "nombre": "Puppy Cachorros",
+       "precio": "2500",
+       "descripcion":"Comida para perros Pequeños"
+    },
+    {
+        "id": "2",
+       "nombre": "Medianos",
+       "precio": "3000",
+       "descripcion":"Comida para perros Medianos"
+    },
+    {
+        "id": "3",
+       "nombre": "Grandes",
+       "precio": "3000",
+       "descripcion":"Comida para perros Grandes"
+    },
+    {
+        "id": "4",
+       "nombre": "Raza Calle",
+       "precio": "1500",
+       "descripcion":"Comida para perros Calle"
+    }
+]
