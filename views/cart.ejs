@@ -12,39 +12,7 @@
         
     </head>
     <body>
-        <header class="header">
-            <div>
-                <img src="/img/logo.png" alt="logo">
-                <h5>Petshop</h5>
-            </div>
-    
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/product">Productos</a>
-                    </li>
-                    <li>
-                        <a href="#">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#">Sobre Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="/myAccount"><i class="fa fa-user" aria-hidden="true"></i></a>
-                    </li>
-                    <li> 
-                    <a class="icon-cart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
-                </li>
-                </ul>
-            </nav>
-        </header>
-    
+        <%-include('partials/header')%>
         <main>
 
             <div >
@@ -138,45 +106,7 @@
 
              </main>
 
-             <footer class="container-fluid pt-5 d-flex justify-content-around align-items-center">
-                <div>
-                    <img class="logo" src="/img/logo.png" alt="logo">
-                </div>
-                <nav>
-                    <ul class="footer-nav">
-                        <li>
-                            <a href="#">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#">Productos</a>
-                        </li>
-                        <li>
-                            <a href="#">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="#">Sobre Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-        
-                <div class="footer-promo">
-                    <p>Get our newsletter</p>
-                    <input placeholder="E-mail" type="email">
-                    <button>Suscribirse</button>
-                </div>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-        
-               
-        
-                
-            </footer>
+             <%-include('partials/header')%>
         
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
