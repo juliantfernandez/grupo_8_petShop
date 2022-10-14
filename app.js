@@ -5,18 +5,17 @@ let app = express()
 app.set('view engine', 'ejs')
 const publicPath = path.resolve(__dirname, './public')
 app.use( express.static(publicPath))
+app.use(express.urlencoded({extended:false})); // POST
+app.use(express.json()); // POST
+
+const methodOverride = require('method-override'); // PUT,DELETE
+app.use(methodOverride('_method')); // PUT,DELETE
 
 let productsRoutes = require('./src/routes/productsRoutes')
 app.use('/', productsRoutes)
 
 const usersRoutes = require('./src/routes/usersRoutes')
 app.use('/users', usersRoutes)
-
-const productDetailRoutes = require('./src/routes/productDetailRoutes')
-app.use('/productDetail', productDetailRoutes)
-
-const cartRoutes = require('./src/routes/cartRoutes')
-app.use('/cart', cartRoutes)
 
 app.listen(3000, () => {
     console.log('Servidor corriendo')
