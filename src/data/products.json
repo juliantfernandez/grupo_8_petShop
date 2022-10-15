@@ -1,26 +1,37 @@
 [
-    {
-        "id": "1",
-       "nombre": "Puppy Cachorros",
-       "precio": "2500",
-       "descripcion":"Comida para perros Pequeños"
-    },
-    {
-        "id": "2",
-       "nombre": "Medianos",
-       "precio": "3000",
-       "descripcion":"Comida para perros Medianos"
-    },
-    {
-        "id": "3",
-       "nombre": "Grandes",
-       "precio": "3000",
-       "descripcion":"Comida para perros Grandes"
-    },
-    {
-        "id": "4",
-       "nombre": "Raza Calle",
-       "precio": "1500",
-       "descripcion":"Comida para perros Calle"
-    }
+ {
+  "id": "1",
+  "nombre": "Puppy Cachorros",
+  "precio": "2500",
+  "descripcion": "Comida para perros Pequeños",
+  "image": "bulldog-frances.png"
+ },
+ {
+  "id": "2",
+  "nombre": "Medianos Solo",
+  "precio": "3500",
+  "descripcion": "Comida para perros EXC Medianos",
+  "image": "bulldog-frances.png"
+ },
+ {
+  "id": "3",
+  "nombre": "Grandes",
+  "precio": "3000",
+  "descripcion": "Comida para perros Grandes",
+  "image": "bulldog-frances.png"
+ },
+ {
+  "id": "4",
+  "nombre": "Raza Calle",
+  "precio": "1500",
+  "descripcion": "Comida para perros Calle",
+  "image": "bulldog-frances.png"
+ },
+ {
+  "id": "41",
+  "nombre": "TEST EDIT",
+  "precio": "12345",
+  "descripcion": "TEST EDIT",
+  "image": "bulldog-frances.png"
+ }
 ]

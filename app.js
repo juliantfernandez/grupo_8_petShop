@@ -15,7 +15,7 @@ let productsRoutes = require('./src/routes/productsRoutes')
 app.use('/', productsRoutes)
 
 const usersRoutes = require('./src/routes/usersRoutes')
-app.use('/users', usersRoutes)
+app.use('/', usersRoutes)
 
 app.listen(3000, () => {
     console.log('Servidor corriendo')

@@ -7,9 +7,9 @@ router.get('/', productsController.index)
 
 router.get('/productCreate', productsController.create)
 
-router.get('/productEdit:id', productsController.edit)
+router.get('/productEdit/:id', productsController.edit)
 
-router.put('/productEdit:id', productsController.update)
+router.put('/productEdit/:id', productsController.update)
 
 router.get('/productDetail', productsController.detail)
 

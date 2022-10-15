@@ -23,7 +23,8 @@ let productsController = {
                 break;
             }
         }
-        res.render('products/product-edit-form',{producto: objProducto})
+        res.render('products/product-edit-form',{ p: objProducto});
+        
     },
     
     detail: (req, res) => {
@@ -40,7 +41,7 @@ let productsController = {
                 break;
             }
         }
-        res.render('products/productId',{producto: objProducto});
+        res.render('products/productId',{ p: objProducto});
     },
     
     store: (req, res) => {
@@ -49,7 +50,7 @@ let productsController = {
             nombre: req.body.nombre,
             precio: req.body.precio,
             descripcion: req.body.descripcion,
-            imagen:""
+            image:"bulldog-frances.png"
         }
         products.push(productoNuevo);
         fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));

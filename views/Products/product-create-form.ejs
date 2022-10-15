@@ -4,6 +4,17 @@
     <%-include('../partials/header')%>
     <h2>Create Form</h2>
 
+    <form action="/productCreate" method="POST">
+        <label for="nombre">Nombre de Producto</label>
+        <input type="text" name="nombre" placeholder="Nombre de Producto"><br><br>
+
+        <label for="precio">Precio de Producto</label>
+        <input type="number" name="precio" placeholder="Precio de Producto"><br><br>
+
+        <label for="descripcion">Descripcion de Producto</label>
+        <input type="text" name="descripcion" placeholder="Descripcion de Producto"><br><br>
+        <button type="submit">Crear Producto</button>
+        </form>
     <%-include('../partials/footer')%>
 
 </body>
