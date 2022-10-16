@@ -2,22 +2,58 @@
 
 <body>
     <%-include('../partials/header')%>
-    <h2>Create Form</h2>
 
-    <form action="/productCreate" method="POST" enctype="multipart/form-data">
-        <label for="nombre">Nombre de Producto</label>
-        <input type="text" name="nombre" placeholder="Nombre de Producto"><br><br>
+    <h2 class="apt">Agregar un nuevo producto</h2>
 
-        <label for="precio">Precio de Producto</label>
-        <input type="number" name="precio" placeholder="Precio de Producto"><br><br>
+    <div class="create_product">
+        <form class="formproduct" action="/productCreate" method="POST" enctype="multipart/form-data">
+            <div class="info_producto">
+                    <label class="label_producto" for="nombre">Nombre de Producto</label><br>
+                    <input class="info_box" type="text" name="nombre" placeholder="Ej: Comida para perros"><br><br>
+                    
+                    <div class="precio_y_marca">
+                        <div>
+                            <label class="label_producto" for="marca">Marca</label><br>
+                            <input class="info_box" type="text" name="marca" placeholder="Ej: Royal Canin"><br><br>
+                        </div>
+                        <div>
+                            <label class="label_producto" for="precio">Precio de Producto</label><br>
+                            <input class="info_box" type="number" name="precio" placeholder="Ej: 200"><br><br>
+                        </div>
+                    </div>
 
-        <label for="descripcion">Descripcion de Producto</label>
-        <input type="text" name="descripcion" placeholder="Descripcion de Producto"><br><br>
+                    <label class="label_producto" for="descripcion">Descripcion de Producto</label><br>
+                    <textarea class="info_box" name="descripcion" rows="5" cols="33" placeholder="Descripción"></textarea><br><br>
+            </div>
 
-        <label for="image">Imagen del Producto</label>
-        <input type="file" name="image"><br><br>
-        <button type="submit">Crear Producto</button>
+            <div class="info_img">
+                <div class="form-input">
+                    <!-- Preview box-->
+                    <div class="preview">
+                        <img src="" alt="" id="image-preview">
+                    </div>
+                    <!--Input box-->
+                    <label for="image">Cargar Imagen</label>
+                    <input type="file" id="image" accept="image/*" onchange="showPreview(event);">
+                </div>
+
+            </div>
+
+            <!-- Javascript-->
+            <script type="text/javascript">
+            function showPreview(event){
+                if(event.target.files.length > 0){
+                  var src = URL.createObjectURL(event.target.files[0]);
+                  var preview = document.getElementById("image-preview");
+                  preview.src = src;
+                  preview.style.display = "block";
+                }
+              }
+            </script>
+
+            <input type="button" value="Agregar Producto" class="submit"><br>
         </form>
+    </div>
     <%-include('../partials/footer')%>
 
 </body>

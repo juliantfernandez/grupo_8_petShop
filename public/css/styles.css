@@ -708,7 +708,94 @@ flex-wrap: wrap;
     background-color: white;
 }
 
+.create_product{
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+}
 
+.info_producto{
+    width: 40%;
+    padding: 20px;
+}
+
+.info_box{
+    width: 100%;
+    padding: 1%;
+    border: 1px solid #6C6EA0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.label_producto{
+    font-weight: bold;
+}
+
+.precio_y_marca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.info_img{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .form-input {
+    width:350px;
+    padding:20px;
+    background:#fff;
+  }
+
+  .form-input img {
+    width:55%;
+    display:none;
+    margin-bottom:30px;
+    text-align: center; 
+ }
+  
+  .form-input label {
+    display:flex;
+    height:45px;
+    line-height:50px;
+    flex-wrap: wrap;
+    background:#BEE5BF;
+    color:#6C6EA0;
+    font-size:15px;
+    font-family:"Open Sans",sans-serif;
+    text-transform:Uppercase;
+    font-weight:600;
+    border-radius:5px;
+    cursor:pointer;
+    justify-content: center;
+  }
+
+  .form-input input {
+    display:none;
+  }
+
+  .preview{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .apt{
+    width: 90%;
+    margin: 40px 0 0 40px;
+    padding: 10px;
+    border-bottom: 2px solid #6C6EA0;
+  }
+
+  .formproduct{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 
 /*media querys*/
 
@@ -778,6 +865,14 @@ flex-wrap: wrap;
         align-items: center;
     }
 
+    .info_producto{
+        width: 100%;
+    }
+
+    .info_img{
+        width: 100%;
+    }
+
  }
 
  @media (max-width: 540px){
@@ -819,4 +914,5 @@ flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
+
  }
