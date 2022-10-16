@@ -3,6 +3,8 @@ const fs = require('fs');
 const productsFilePath = path.join(__dirname, '../data/products.json')
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 
+
+
 let productsController = {
     index: (req, res) => {
         products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
@@ -45,27 +47,28 @@ let productsController = {
     },
     
     store: (req, res) => {
+        let imageName = req.file.filename
         let productoNuevo = {
             id: (products[products.length-1].id)+1,
             nombre: req.body.nombre,
             precio: req.body.precio,
             descripcion: req.body.descripcion,
-            image:"bulldog-frances.png"
+            image: imageName
         }
         products.push(productoNuevo);
         fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
         res.redirect('/');
-
     },
     update: (req,res) => {
         let idProducto = req.params.id;
-        let objProducto;
+        let imageEdit = req.file.filename;
 
         for (let p of products){
             if (idProducto == p.id){
                 p.nombre = req.body.nombre;
                 p.precio = req.body.precio;
                 p.descripcion = req.body.descripcion;
+                p.image = imageEdit;
                 break;
             }
         }

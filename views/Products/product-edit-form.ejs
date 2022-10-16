@@ -3,7 +3,7 @@
     <%-include('../partials/header')%>
     <h2>Estas Editando el producto <%=p.nombre%>
         
-        <form action="/productEdit/<%=p.id%>?_method=put" method="POST">
+        <form action="/productEdit/<%=p.id%>?_method=put" method="POST" enctype="multipart/form-data"> 
             <form action="" method="POST">
                 <label for="nombre">Nombre de Producto Actual <%=p.nombre%></label>
                 <input type="text" name="nombre" value="<%=p.nombre%>" placeholder="Nombre de Producto"><br><br>
@@ -13,6 +13,9 @@
         
                 <label for="descripcion">Descripcion de Producto Actual <%=p.descripcion%></label>
                 <input type="text" name="descripcion" value="<%=p.descripcion%>" placeholder="Descripcion de Producto"><br><br>
+
+                <label for="imageEdit">Imagen del Producto</label>
+                 <input type="file" name="imageEdit"><br><br>
                 <button type="submit">Editar Producto</button>
                 </form>
         </form>

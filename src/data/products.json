@@ -29,9 +29,9 @@
  },
  {
   "id": "41",
-  "nombre": "TEST EDIT",
-  "precio": "12345",
-  "descripcion": "TEST EDIT",
-  "image": "bulldog-frances.png"
+  "nombre": "TEST MULTER EDIT",
+  "precio": "1231236",
+  "descripcion": "TEST MULTER EDIT",
+  "image": "1665932018178Captura de Pantalla 2022-10-10 a la(s) 21.36.50.png"
  }
 ]
