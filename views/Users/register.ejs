@@ -1,8 +1,23 @@
-<%-include('../partials/head', {title: 'Register'})%> 
+<%-include('../partials/head', {title: 'Login'})%> 
 
 <body>
-    <%-include('../partials/header')%>
-    <h1>REGISTER</h1>
+    <%-include('../Partials/header')%>
+    <div class="form">
+
+		<div class="SignUp_form">
+            <img src="/img/logo.png" class="logo-myaccount">
+            <h2 class="title-login text-center">SignUp</h2>
+			<br>
+            <form action="/">
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Username"><br>
+                <input type="email" placeholder="E-Mail"><br>
+                <input type="password" placeholder="Password"><br>
+                <input type="button" value="Registrarse" class="submit"><br>
+            </form>
+		</div>
+
+	</div>
 
     <%-include('../partials/footer')%>
 

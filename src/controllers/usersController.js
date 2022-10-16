@@ -2,13 +2,13 @@ let path = require('path');
 
 let usersController = {
     index: (req, res) => {
-        res.render('users/MyAccount')
+        res.render('Users/MyAccount')
 },
     register: (req, res) => {
-        res.render('users/register')
+        res.render('Users/register')
 },
     login: (req, res) => {
-        res.render('users/login')
+        res.render('Users/login')
 },
     cart: (req, res) => {
         res.render('cart')

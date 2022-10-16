@@ -301,55 +301,6 @@ footer{
 }
 
 
-
-
-#chbox:checked ~ .SignUp_form{
-	display: flex;
-    
-}
-
-#chbox:checked ~ .login_form{
-	display: none;
-    
-}
-
-#chbox:checked + .layer{
-	left: 50%;
-}
-#chbox:checked ~ .layer2{
-	left: 50%;
-   
-}
-#chbox{
-	display: none;
-}
-
-
-.layer{
-	content: '';
-	height: 50px;
-	width: 50%;
-	background-color: transparent;
-	float: right;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.layer2{
-	content: '';
-	height: 50px;
-	z-index: -1;
-	width: 50%;
-	background-color: #6C6EA0;
-	float: right;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-    
-}
-
-
 	.form .login_form{
 		display: flex;
 		flex-direction: column;
@@ -361,6 +312,7 @@ footer{
 		border-bottom: 1px solid #6C6EA0;
 		outline: none;
 		padding: 5px;
+        margin: 8px 0;
 	}
 
 
@@ -389,16 +341,17 @@ footer{
 
 
 .form .SignUp_form{
-	display: none;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form .SignUp_form input{
-	border: none;
-	border-bottom: 1px solid black;
-	outline: none;
-	padding: 5px;
-	margin: 0px;
+		border: none;
+		border-bottom: 1px solid #6C6EA0;
+		outline: none;
+		padding: 5px;
+        margin: 8px 0;
 }
 /*CART - Manuel Giovinazzo*/
 
