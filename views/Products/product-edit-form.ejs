@@ -21,16 +21,22 @@
                 <div class="form-input">
                     <!-- Preview box-->
                     <div class="preview">
-                        <img src="../../public/img/products/<%= p.image%>" alt="" id="image-preview">
+                        <img src="" alt="" id="image-preview">
                     </div>
                     <!--Input box-->
                     <label for="imageEdit">Cargar Imagen</label>
-                    <input type="file" id="image" name="imageEdit" accept="image/*" onchange="showPreview(event);">
+                    <input type="file"  name="imageEdit" id="imageEdit" accept="image/*" onchange="showPreview(event);">
                 </div>
 
             </div>
 
-            <!-- Javascript-->
+            <input type="submit" value="Editar Producto" class="submitProduct"><br>
+        </form>
+    </div>
+    <%-include('../partials/footer')%>
+
+
+ <!-- Javascript-->
             <script type="text/javascript">
             function showPreview(event){
                 if(event.target.files.length > 0){
@@ -41,11 +47,6 @@
                 }
             }
             </script>
-
-            <input type="submit" value="Editar Producto" class="submitProduct"><br>
-        </form>
-    </div>
-    <%-include('../partials/footer')%>
 
 </body>
 </html>
