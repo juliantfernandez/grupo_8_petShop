@@ -17,6 +17,10 @@ app.use('/', productsRoutes)
 const usersRoutes = require('./src/routes/usersRoutes')
 app.use('/', usersRoutes)
 
+app.use((req,res,next) => {
+    res.status(404).render('error')
+})
+
 app.listen(3000, () => {
     console.log('Servidor corriendo')
 })
