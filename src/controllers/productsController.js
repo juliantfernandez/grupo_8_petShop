@@ -47,9 +47,10 @@ let productsController = {
     },
     
     store: (req, res) => {
+        
         let imageName = req.file.filename
         let productoNuevo = {
-            id: (products[products.length-1].id)+1,
+            id: products[products.length-1].id+1,
             nombre: req.body.nombre,
             precio: req.body.precio,
             descripcion: req.body.descripcion,
@@ -82,6 +83,7 @@ let productsController = {
             return elemento.id!=idProducto;
         })
         
+        products = arrProductos ;
         fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
         res.redirect('/');
     }

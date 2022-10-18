@@ -10,12 +10,6 @@
             <div class="info_producto">
                     <label class="label_producto" for="nombre">Nombre de Producto</label><br>
                     <input class="info_box" type="text" name="nombre" placeholder="Ej: Comida para perros"><br><br>
-                    
-                    <div class="precio_y_marca">
-                        <div>
-                            <label class="label_producto" for="marca">Marca</label><br>
-                            <input class="info_box" type="text" name="marca" placeholder="Ej: Royal Canin"><br><br>
-                        </div>
                         <div>
                             <label class="label_producto" for="precio">Precio de Producto</label><br>
                             <input class="info_box" type="number" name="precio" placeholder="Ej: 200"><br><br>
@@ -34,7 +28,7 @@
                     </div>
                     <!--Input box-->
                     <label for="image">Cargar Imagen</label>
-                    <input type="file" id="image" accept="image/*" onchange="showPreview(event);">
+                    <input type="file" id="image" name="image" accept="image/*" onchange="showPreview(event);">
                 </div>
 
             </div>
@@ -51,7 +45,7 @@
               }
             </script>
 
-            <input type="button" value="Agregar Producto" class="submit"><br>
+            <input type="submit" value="Agregar Producto" class="submit"><br>
         </form>
     </div>
     <%-include('../partials/footer')%>

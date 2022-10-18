@@ -774,9 +774,9 @@ flex-wrap: wrap;
     justify-content: center;
   }
 
-  .form-input input {
+  /* .form-input input {
     display:none;
-  }
+  } */
 
   .preview{
     display: flex;
