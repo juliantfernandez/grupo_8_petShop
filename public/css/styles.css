@@ -712,6 +712,8 @@ flex-wrap: wrap;
     display: flex;
     margin: 30px;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .info_producto{
@@ -774,9 +776,9 @@ flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* .form-input input {
+  .form-input input {
     display:none;
-  } */
+  }
 
   .preview{
     display: flex;
@@ -794,8 +796,21 @@ flex-wrap: wrap;
   .formproduct{
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
   }
   
+  .submitProduct{
+    width: 100%;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #6C6EA0;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
 
 /*media querys*/
 
