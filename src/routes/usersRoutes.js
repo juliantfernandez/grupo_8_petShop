@@ -11,5 +11,7 @@ router.get('/login', usersController.login)
 
 router.get('/cart', usersController.cart)
 
+router.get('/profile',usersController.profile)
+
 
 module.exports = router

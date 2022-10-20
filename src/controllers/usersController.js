@@ -12,7 +12,10 @@ let usersController = {
 },
     cart: (req, res) => {
         res.render('cart')
-}}
+},
+    profile: (req, res) => {
+        res.render('Users/profile')
+}}  
 
 
 module.exports = usersController

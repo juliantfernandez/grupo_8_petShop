@@ -17,4 +17,4 @@ Teniendo en cuenta que perdimos a una integrante del grupo y otro integrante nun
 20/10
 
 Ya teniendo definido que quedamos 3 integrantes en el grupo fue altamente importante dividirnos bien las tareas este sprint. Habiendo podido hacer esto de una manera eficiente logramos completar cada parte con un poco de tiempo de sobra. Tambien nos pudimos ayudar con algun minimo detalle con el que capaz alguno se habia quedado trabado en su parte. Por ultimo nos vino muy bien utilizar el tiempo dado en clase para encontrar y solucionar bugs en general de la pagina que aparecieron por los cambios de codigo o que simplemente no habian aparecido hasta que todos habian hecho su parte y pudimos poner la pagina a prueba. 
-Destaco la buena division de trabajo y la comunicacion en este sprint.
+Destacamos la buena division de trabajo y la comunicacion en este sprint.
