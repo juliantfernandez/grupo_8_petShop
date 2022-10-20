@@ -10,6 +10,11 @@ Estaria bueno ponernos fechas aproximadas internas a cumplir para no llegar los 
 
 En conclusion deberiamos comenzar a comunicarnos y organizarnos mejor, darle mas uso al tablero de Trello y posiblemente dividirnos el trabajo mejor para fomentar el trabajo en equipo.
 
-10/3
+3/10
 
 Teniendo en cuenta que perdimos a una integrante del grupo y otro integrante nunca se presento o aporto nada hasta el dia de hoy, vamos a tener que empezar a dividirnos mucho mejor todo el trabajo. Tambien ayudarnos entre los 3 con temas que a cada uno nos cuesta mas que al otro o no entendemos bien en general. Definir un plan para llevar a cabo las tareas dadas, si va a ser hacer reuniones y trabajar en las mismas o trabajar por nuestra cuenta para maximizar el enfoque y despues hacer reuniones para ponernos al dia con como vienen los otros.
+
+20/10
+
+Ya teniendo definido que quedamos 3 integrantes en el grupo fue altamente importante dividirnos bien las tareas este sprint. Habiendo podido hacer esto de una manera eficiente logramos completar cada parte con un poco de tiempo de sobra. Tambien nos pudimos ayudar con algun minimo detalle con el que capaz alguno se habia quedado trabado en su parte. Por ultimo nos vino muy bien utilizar el tiempo dado en clase para encontrar y solucionar bugs en general de la pagina que aparecieron por los cambios de codigo o que simplemente no habian aparecido hasta que todos habian hecho su parte y pudimos poner la pagina a prueba. 
+Destaco la buena division de trabajo y la comunicacion en este sprint.
