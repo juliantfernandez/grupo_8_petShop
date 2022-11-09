@@ -1,0 +1,16 @@
+const path = require('path');
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, './public/img/perfiles');
+    },
+    filename: (req, file, cb) => {
+        let filename = `${Date.now()}_img${path.extname(file.originalname)}`;
+        cb(null, filename);
+    }
+})
+
+const uploadFIle = multer({ storage });
+
+module.exports = uploadFIle;
