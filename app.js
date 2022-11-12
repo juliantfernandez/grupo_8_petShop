@@ -1,10 +1,17 @@
 let express = require('express')
 const path = require('path')
 let app = express()
-
-app.set('view engine', 'ejs')
+let session = require('express-session')
 const publicPath = path.resolve(__dirname, './public')
-app.use( express.static(publicPath))
+app.set('view engine', 'ejs')
+
+app.use(session({
+    secret: "Shhh, It's a secret",
+    resave: false,
+    saveUninitialized: false,
+}));
+
+app.use(express.static(publicPath))
 app.use(express.urlencoded({extended:false})); // POST
 app.use(express.json()); // POST
 
