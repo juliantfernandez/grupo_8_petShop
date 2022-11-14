@@ -12,7 +12,7 @@ app.use(session({
 }));
 
 app.use(express.static(publicPath))
-app.use(express.urlencoded({extended:false})); // POST
+app.use(express.urlencoded({extended:false})); //Captura info x POST
 app.use(express.json()); // POST
 
 const methodOverride = require('method-override'); // PUT,DELETE
@@ -27,9 +27,9 @@ app.use('/', usersRoutes)
 const petshopRoutes = require('./src/routes/petshopRoutes')
 app.use('/', petshopRoutes)
 
-app.use((req,res,next) => {
-    res.status(404).render('error')
-})
+// app.use((req,res,next) => {
+//     res.status(404).render('error')
+// })
 
 app.listen(3000, () => {
     console.log('Servidor corriendo')
