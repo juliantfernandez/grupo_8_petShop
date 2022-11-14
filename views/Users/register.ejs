@@ -15,20 +15,20 @@
             <% //}%> -->
             <form method="POST" action="/register" enctype="multipart/form-data">
 
-                <label for="nombreUsuario">Nombre y Apellido</label><br>
-                <input type="text" placeholder="Name" name="nombreUsuario" value="<%= locals.oldData ? locals.oldData.nombreUsuario : null %>"><br>
+                <label for="nombreUsuario"></label><br>
+                <input type="text" placeholder="Nombre y Apellido" name="nombreUsuario" value="<%= locals.oldData ? locals.oldData.nombreUsuario : null %>"><br>
                 <% if(locals.errors && errors.nombreUsuario){%>
                     <p style="color:red ;"><%= errors.nombreUsuario.msg %></p> <br>
                      <% }%>
 
-                <label for="emailUsuario">E-mail</label><br>
+                <label for="emailUsuario"></label><br>
                 <input type="email" placeholder="E-Mail" name="emailUsuario" value="<%= locals.oldData ? locals.oldData.emailUsuario : null %>"><br>
                 <% if(locals.errors && errors.emailUsuario){%>
                     <p style="color:red ;"><%= errors.emailUsuario.msg %></p> <br>
                      <% }%>
 
-                <label for="passwordUsuario">Contraseña</label>
-                <input type="password" placeholder="Password" name="passwordUsuario" value="<%= locals.oldData ? locals.oldData.passwordUsuario : null %>"><br>
+                <label for="passwordUsuario"></label>
+                <input type="password" placeholder="Contraseña" name="passwordUsuario" value="<%= locals.oldData ? locals.oldData.passwordUsuario : null %>"><br>
                 <% if(locals.errors && errors.passwordUsuario){%>
                     <p style="color:red ;"><%= errors.passwordUsuario.msg %></p> <br>
                      <% }%>
