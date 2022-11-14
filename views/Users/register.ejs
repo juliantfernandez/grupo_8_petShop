@@ -8,12 +8,38 @@
             <img src="/img/logo.png" class="logo-myaccount">
             <h2 class="title-login text-center">SignUp</h2>
 			<br>
-            <form action="/">
-                <input type="text" placeholder="Name"><br>
-                <input type="text" placeholder="Username"><br>
-                <input type="email" placeholder="E-Mail"><br>
-                <input type="password" placeholder="Password"><br>
-                <input type="button" value="Registrarse" class="submit"><br>
+            <!-- <%//if(locals.errors){ %>
+                <% //for(let oneError in errors){ %>
+                <p style="color: red"><%= //errors[oneError].msg %> </p>
+            <% //}%>
+            <% //}%> -->
+            <form method="POST" action="/register" enctype="multipart/form-data">
+
+                <label for="nombreUsuario">Nombre y Apellido</label><br>
+                <input type="text" placeholder="Name" name="nombreUsuario" value="<%= locals.oldData ? locals.oldData.nombreUsuario : null %>"><br>
+                <% if(locals.errors && errors.nombreUsuario){%>
+                    <p style="color:red ;"><%= errors.nombreUsuario.msg %></p> <br>
+                     <% }%>
+
+                <label for="emailUsuario">E-mail</label><br>
+                <input type="email" placeholder="E-Mail" name="emailUsuario" value="<%= locals.oldData ? locals.oldData.emailUsuario : null %>"><br>
+                <% if(locals.errors && errors.emailUsuario){%>
+                    <p style="color:red ;"><%= errors.emailUsuario.msg %></p> <br>
+                     <% }%>
+
+                <label for="passwordUsuario">Contraseña</label>
+                <input type="password" placeholder="Password" name="passwordUsuario" value="<%= locals.oldData ? locals.oldData.passwordUsuario : null %>"><br>
+                <% if(locals.errors && errors.passwordUsuario){%>
+                    <p style="color:red ;"><%= errors.passwordUsuario.msg %></p> <br>
+                     <% }%>
+
+                <label for="imageProfile">Cargar Imagen de Perfil</label><br>
+                <input type="file" name="imageProfile">
+                <% if(locals.errors && errors.imageProfile){%>
+                    <p style="color:red ;"><%= errors.imageProfile.msg %></p> <br>
+                     <% }%>
+
+                <input type="submit" value="Registrarse" class="submit"><br>
             </form>
 		</div>
 

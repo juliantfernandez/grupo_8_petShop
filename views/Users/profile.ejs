@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<%-include('../partials/head', {title: 'Login'})%> 
 <body>
-    Vista Perfil
+    <%-include('../Partials/header')%>
+    <h2>Hola <%= user.nombreUsuario %> </h2>
+    <img style="width: 250px; height: auto; padding: 25px; border-radius: 650px; " src="img/avatars/<%=user.imageProfile%>">
+    <p style="padding: 15px; border: 2px solid green; display:inline; border-radius: 650px"> <%= user.emailUsuario%></p>
 </body>
-</html>

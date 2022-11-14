@@ -2,6 +2,7 @@ let path = require('path');
 const fs = require('fs');
 const productsFilePath = path.join(__dirname, '../data/products.json')
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
+let {validationResult} = require('express-validator')
 
 
 
@@ -47,18 +48,30 @@ let productsController = {
     },
     
     store: (req, res) => {
-        
-        let imageName = req.file.filename
-        let productoNuevo = {
-            id: products[products.length-1].id+1,
-            nombre: req.body.nombre,
-            precio: req.body.precio,
-            descripcion: req.body.descripcion,
-            image: imageName
+        const resultValidation = validationResult(req)
+
+        // if(resultValidation.errors.length > 0){
+        //     res.render('users/register', {
+        //         errors: resultValidation.mapped(),
+        //         oldData: req.body
+        //     })
+        if(resultValidation.errors.length > 0){
+            res.render('products/product-create-form', {
+                errors: resultValidation.mapped()
+            })
+        }else{
+            let imageName = req.file.filename
+            let productoNuevo = {
+                id: products[products.length-1].id+1,
+                nombre: req.body.nombre,
+                precio: req.body.precio,
+                descripcion: req.body.descripcion,
+                image: imageName
+            }
+            products.push(productoNuevo);
+            fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
+            res.redirect('/');
         }
-        products.push(productoNuevo);
-        fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
-        res.redirect('/');
     },
     update: (req,res) => {
         let idProducto = req.params.id;

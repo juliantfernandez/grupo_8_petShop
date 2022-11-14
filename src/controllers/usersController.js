@@ -2,96 +2,81 @@ const { validationResult } = require('express-validator');
 let path = require('path');
 const User = require('../../models/User');
 const bcryptjs = require('bcryptjs');
-let session = require('express-session')
+// let session = require('express-session')
 
 let usersController = {
     index: (req, res) => {
-        res.render('Users/MyAccount')
+        res.render('users/MyAccount')
 },
     register: (req, res) => {
-        res.render('Users/register')
+        res.render('users/register')
         
+}, profile:(req,res)=>{
+    res.render('users/profile', {
+        user: req.session.userLogged
+    })
 },
     registerProcess: (req,res) => {
-        const resultValidation = validationResult(req);
+      const resultValidation = validationResult(req)
 
-        if(resultValidation.errors.length > 0) {
-            return res.render('Users/register', {
-                errors: resultValidation.mapped(),
-                oldData: req.body
-            });
-        }
-        //console.log(req.body, req.file)
-        let userInDB = User.findByField('email', req.body.email);
+      if(resultValidation.errors.length > 0){
+        res.render('users/register', {
+            errors: resultValidation.mapped(),
+            oldData: req.body
+        })
+      }
+      let userInDB = User.findByField('emailUsuario', req.body.emailUsuario)
 
-        if(userInDB){
-            return res.render('Users/register', {
-                errors: {
-                    email: {
-                        msg: 'Este email ya esta registrado'
-                    }
-                },    
-                oldData: req.body
-        });
-    }
-        let userToCreate = {
-            ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10),
-            fotoPerfil: req.file.filename
-        }
-
-        let userCreated = User.create(userToCreate);
-
-        return res.redirect('Users/login');
-    },
-    login: (req, res) => {
-        res.render('Users/login')
-        
-    
-},
-    loginProcess: (req,res) => {
-        let userToLogin = User.findByField('email', req.body.email);
-        
-        if (userToLogin) {
-            let OkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-            if(OkPassword) {
-                delete userToLogin.password;
-                req.session.userLogged = userToLogin;
-                return res.redirect('Users/profile')
-            }
-            return res.render('Users/login', {
-                errors: {
-                    email: {
-                        msg: 'Las credenciales son invalidas'
-                    }
-                }
-            })
-                
-        }
-
-        return res.render('Users/login', {
+      if(userInDB){
+        return res.render('users/register',{
             errors: {
-                email: {
-                    msg: 'No se encuentra este email en la base de datos '
+                emailUsuario: {
+                    msg: 'Este email ya esta registrado'
+                }
+            },
+            oldData: req.body
+        })
+      }
+
+      let userToCreate = {
+        ...req.body,
+        passwordUsuario: bcryptjs.hashSync(req.body.passwordUsuario, 10),
+       imageProfile: req.file.filename
+      }
+     User.create(userToCreate)
+      res.redirect('/login')
+},
+
+login:(req,res)=>{
+    res.render('users/login')
+},
+loginProcess: (req,res)=>{
+   let userToLogin = User.findByField('emailUsuario', req.body.emailUsuario)
+
+   if(userToLogin){
+        let isOkThePassword = bcryptjs.compareSync(req.body.passwordUsuario, userToLogin.passwordUsuario)
+        if(isOkThePassword){
+            delete userToLogin.passwordUsuario
+            req.session.userLogged = userToLogin;
+        return res.redirect('/profile');
+        }
+        return res.render('users/login', {
+            errors:{
+                passwordUsuario: {
+                    msg:'Las credenciales son incorrectas'
                 }
             }
         })
+    }
 
-},
-    cart: (req, res) => {
-        res.render('cart')
-    },
-    profile: (req, res) => {
-        res.render('Users/profile', {
-            user: req.session.userLogged
-        });
-},
-
-    logout: (req, res) => {
-        req.session.destroy();
-        return res.redirect('/')
-},
-}  
+    return res.render('users/login',{
+        errors:{
+            emailUsuario: {
+                msg:'No se encuentra este Email'
+            }
+        }
+   })
+}}
 
 
 module.exports = usersController
