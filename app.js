@@ -5,12 +5,15 @@ let session = require('express-session')
 const publicPath = path.resolve(__dirname, './public')
 app.set('view engine', 'ejs')
 
+const userLoggedMiddleware = require('./Middlewares/userLoggedMiddleware')
+
+
 app.use(session({
     secret: "Shhh, It's a secret",
     resave: false,
     saveUninitialized: false,
 }));
-
+app.use(userLoggedMiddleware)
 app.use(express.static(publicPath))
 app.use(express.urlencoded({extended:false})); //Captura info x POST
 app.use(express.json()); // POST

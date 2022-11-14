@@ -6,6 +6,8 @@
 
     <nav>
         <ul>
+            <% if(!locals.isLogged){ %>
+               
             <li>
                 <a href="/">Inicio</a>
             </li>
@@ -22,19 +24,40 @@
             <li>
                 <a href="/aboutUs#contact">Contacto</a>
             </li>
-
-            <li>
-                <a href="/productCreate">Crear Producto</a>
-            </li>
-            <li>
+            
+                <li>
                 <a href="/login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
             </li>
             <li>
                 <a href="/register"><i class="fa fa-user" aria-hidden="true"></i>Register</a>
             </li>
+            <%} else{%>
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/productDetail">Productos</a>
+                </li>
+                <li>
+                    <a href="/aboutUs#services">Servicios</a>
+                </li>
+                <li>
+                    <a href="/aboutUs#">Sobre Nosotros</a>
+    
+                </li>
+                <li>
+                    <a href="/aboutUs#contact">Contacto</a>
+                </li>
+            <li>
+                <a href="/productCreate">Crear Producto</a>
+            </li>
+            <li>
+                <a href="/logout">Cerrar Sesion</a>
+            </li>
             <li> 
             <a class="icon-cart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a>
         </li>
         </ul>
+        <% } %>
     </nav>
 </header>

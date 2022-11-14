@@ -4,6 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const {body} = require('express-validator')
 let productsController = require('../controllers/productsController');
+const guestMiddleware = require('../../Middlewares/guestMiddleware')
 
 const configImage = multer.diskStorage({
     destination: (req, file, cb)=> {
@@ -39,7 +40,7 @@ const uploadFile = multer({storage: configImage})
 
 router.get('/', productsController.index)
 
-router.get('/productCreate', productsController.create)
+router.get('/productCreate', guestMiddleware ,productsController.create)
 
 router.get('/productEdit/:id', productsController.edit)
 

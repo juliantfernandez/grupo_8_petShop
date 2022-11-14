@@ -76,6 +76,10 @@ loginProcess: (req,res)=>{
             }
         }
    })
+},
+logout: (req,res)=>{
+    req.session.destroy();
+    return res.redirect('/')
 }}
 
 
