@@ -24,6 +24,9 @@ app.use('/', productsRoutes)
 const usersRoutes = require('./src/routes/usersRoutes')
 app.use('/', usersRoutes)
 
+const petshopRoutes = require('./src/routes/petshopRoutes')
+app.use('/', petshopRoutes)
+
 app.use((req,res,next) => {
     res.status(404).render('error')
 })
