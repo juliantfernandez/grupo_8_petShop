@@ -21,18 +21,18 @@ app.use(express.json()); // POST
 const methodOverride = require('method-override'); // PUT,DELETE
 app.use(methodOverride('_method')); // PUT,DELETE
 
-let productsRoutes = require('./src/routes/productsRoutes')
+let productsRoutes = require('/src/routes/productsRoutes')
 app.use('/', productsRoutes)
 
-const usersRoutes = require('./src/routes/usersRoutes')
+const usersRoutes = require('/src/routes/usersRoutes')
 app.use('/', usersRoutes)
 
-const petshopRoutes = require('./src/routes/petshopRoutes')
+const petshopRoutes = require('/src/routes/petshopRoutes')
 app.use('/', petshopRoutes)
 
-// app.use((req,res,next) => {
-//     res.status(404).render('error')
-// })
+ app.use((req,res,next) => {
+     res.status(404).render('error')
+ })
 
 app.listen(3000, () => {
     console.log('Servidor corriendo')
