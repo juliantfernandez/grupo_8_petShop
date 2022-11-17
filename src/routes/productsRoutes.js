@@ -3,7 +3,7 @@ const router = express.Router();
 // const multer = require('multer');
 // const path = require('path');
 // const {body} = require('express-validator')
-let productsController = require('../controllers/productsController');
+let productsController = require('./controllers/productsController');
 // const guestMiddleware = require('../../Middlewares/guestMiddleware')
 
 // const configImage = multer.diskStorage({
