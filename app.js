@@ -13,7 +13,7 @@ app.set('view engine', 'ejs')
 //     resave: false,
 //     saveUninitialized: false,
 // }));
-app.use(userLoggedMiddleware)
+// app.use(userLoggedMiddleware)
 app.use(express.static(publicPath))
 app.use(express.urlencoded({extended:false})); //Captura info x POST
 app.use(express.json()); // POST
