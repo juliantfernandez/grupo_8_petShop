@@ -34,14 +34,10 @@ app.use('/', petshopRoutes)
 //     res.status(404).render('error')
 // })
 
-// app.listen(3000, () => {
-//     console.log('Servidor corriendo')
-// })
+app.listen(3000, () => {
+    console.log('Servidor corriendo')
+})
 
-const port = process.env.PORT || 4000;
-
-app.listen(port)
- console.log('listen port' + port);
 
 // app.listen(process.env.PORT || 3000, function() {
 //     console.log("Servidor corriendo");
