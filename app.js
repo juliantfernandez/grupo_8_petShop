@@ -34,10 +34,6 @@ app.use('/', petshopRoutes)
      res.status(404).render('error')
  })
 
- app.use((req,res,next) => {
-    res.status(500).send('error 500 by petshop')
-})
-
 // app.listen(3000, () => {
 //     console.log('Servidor corriendo')
 // })
