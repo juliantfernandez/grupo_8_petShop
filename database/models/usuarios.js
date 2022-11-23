@@ -1,4 +1,4 @@
-function usuariosData(sequelize, dataTypes){
+function usuariosData(sequelize, Datatypes){
 
 let a = 'usuario';
 
