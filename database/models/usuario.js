@@ -1,19 +1,19 @@
-function usuariosData(sequelize, Datatypes){
+function usuariosData(sequelize, DataTypes){
 
 let a = 'usuario';
 
 let c = {
-    id:{type: Datatypes.TINYINT, primaryKey: true, autoincrement: true},
-    nombre:{type: Datatypes.STRING},
-    apellido:{type: Datatypes.STRING},
-    email:{type: Datatypes.STRING},
-    clave:{type: Datatypes.STRING},
-    imagen:{type: Datatypes.STRING},
-    admin:{type: Datatypes.BOOLEAN},
-    local_id:{type: Datatypes.TINYINT}
+    id:{type: DataTypes.TINYINT, primaryKey: true, autoincrement: true},
+    nombre:{type: DataTypes.STRING},
+    apellido:{type: DataTypes.STRING},
+    email:{type: DataTypes.STRING},
+    clave:{type: DataTypes.STRING},
+    imagen:{type: DataTypes.STRING},
+    admin:{type: DataTypes.BOOLEAN},
+    local_id:{type: DataTypes.TINYINT}
 }
 
-let cg = {camelcase: false, timestamps: false};
+let cg = {camelcase: false, timestamps: false, freezeTableName: true};
 
 const usuarios = sequelize.define(a,c,cg)
 

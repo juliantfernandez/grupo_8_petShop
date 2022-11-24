@@ -1,7 +1,7 @@
-let express = require('express')
+const express = require('express')
 const path = require('path')
-let app = express()
-let session = require('express-session')
+const app = express()
+const session = require('express-session')
 const publicPath = path.resolve(__dirname, './public')
 app.set('view engine', 'ejs')
 
@@ -21,7 +21,7 @@ app.use(express.json()); // POST
 const methodOverride = require('method-override'); // PUT,DELETE
 app.use(methodOverride('_method')); // PUT,DELETE
 
-let productsRoutes = require('./src/routes/productsRoutes')
+const productsRoutes = require('./src/routes/productsRoutes')
 app.use('/', productsRoutes)
 
 const usersRoutes = require('./src/routes/usersRoutes')

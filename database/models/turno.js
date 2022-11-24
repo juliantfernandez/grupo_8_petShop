@@ -1,18 +1,18 @@
-function turnosData(sequelize, Datatypes){
+function turnosData(sequelize, DataTypes){
 
     let a = 'turno';
     
     let c = {
-        id:{type: Datatypes.TINYINT, primaryKey: true, autoincrement: true},
-        fecha_solicitud:{type: Datatypes.DATE},
-        fecha_turno:{type: Datatypes.DATE},
-        fecha_baja:{type: Datatypes.DATE},
-        usuario_id:{type: Datatypes.TINYINT},
-        local_id:{type: Datatypes.TINYINT},
-        servicio_id:{type: Datatypes.TINYINT}
+        id:{type: DataTypes.TINYINT, primaryKey: true, autoincrement: true},
+        fecha_solicitud:{type: DataTypes.DATE},
+        fecha_turno:{type: DataTypes.DATE},
+        fecha_baja:{type: DataTypes.DATE, allowNull: true},
+        usuario_id:{type: DataTypes.TINYINT},
+        local_id:{type: DataTypes.TINYINT},
+        servicio_id:{type: DataTypes.TINYINT}
     }
     
-    let cg = {camelcase: false, timestamps: false};
+    let cg = {camelcase: false, timestamps: false, freezeTableName: true};
     
     const turno = sequelize.define(a,c,cg)
     

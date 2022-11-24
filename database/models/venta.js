@@ -1,17 +1,17 @@
-function ventasData(sequelize, Datatypes){
+function ventasData(sequelize, DataTypes){
 
     let a = 'venta';
     
     let c = {
-        id:{type: Datatypes.TINYINT, primaryKey: true, autoincrement: true},
-        monto_unitario:{type: Datatypes.DECIMAL},
-        cantidad:{type: Datatypes.TINYINT},
-        usuario_id:{type: Datatypes.TINYINT},
-        detalle_venta_id:{type: Datatypes.TINYINT},
-        producto_id:{type: Datatypes.TINYINT}
+        id:{type: DataTypes.TINYINT, primaryKey: true, autoincrement: true},
+        monto_unitario:{type: DataTypes.DECIMAL},
+        cantidad:{type: DataTypes.TINYINT},
+        usuario_id:{type: DataTypes.TINYINT},
+        detalle_venta_id:{type: DataTypes.TINYINT},
+        producto_id:{type: DataTypes.TINYINT}
     }
     
-    let cg = {camelcase: false, timestamps: false};
+    let cg = {camelcase: false, timestamps: false, freezeTableName: true};
     
     const venta = sequelize.define(a,c,cg)
     

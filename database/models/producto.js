@@ -1,19 +1,19 @@
-function productosData(sequelize, Datatypes){
+function productosData(sequelize, DataTypes){
 
     let a = 'producto';
     
     let c = {
-        id:{type: Datatypes.TINYINT, primaryKey: true, autoincrement: true},
-        nombre:{type: Datatypes.STRING},
-        precio:{type: Datatypes.DECIMAL},
-        fecha_creacion:{type: Datatypes.DATE},
-        fecha_baja:{type: Datatypes.DATE},
-        imagen:{type: Datatypes.STRING},
-        admin_id:{type: Datatypes.TINYINT},
-        categoria_id:{type: Datatypes.TINYINT}
+        id:{type: DataTypes.TINYINT, primaryKey: true, autoincrement: true},
+        nombre:{type: DataTypes.STRING},
+        precio:{type: DataTypes.DECIMAL},
+        fecha_creacion:{type: DataTypes.DATE},
+        fecha_baja:{type: DataTypes.DATE, allowNull: true},
+        imagen:{type: DataTypes.STRING},
+        admin_id:{type: DataTypes.TINYINT},
+        categoria_id:{type: DataTypes.TINYINT}
     }
     
-    let cg = {camelcase: false, timestamps: false};
+    let cg = {camelcase: false, timestamps: false, freezeTableName: true};
     
     const productos = sequelize.define(a,c,cg)
     
