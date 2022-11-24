@@ -1,0 +1,17 @@
+function categoriasData(sequelize, Datatypes){
+
+let a = 'categoria';
+
+let c = {
+    id:{type: Datatypes.TINYINT, primaryKey: true, autoincrement: true},
+    nombre:{type: Datatypes.STRING}
+}
+
+let cg = {camelcase: false, timestamps: false};
+
+const categoria = sequelize.define(a,c,cg)
+
+return categoria;
+}
+
+module.exports = categoriasData;
